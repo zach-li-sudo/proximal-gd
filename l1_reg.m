@@ -1,7 +1,7 @@
 %% Example 10.38 in the book, First-Order Methods in Opt, by Beck
 % % l1-regularized least square
-% % Proximal Gradient Descent
-% % author: Zhuo Li
+% % Proximal Gradient Descent with fixed step-size
+% % author: Zach Li
 clear all; clc;
 
 %% l1-l2 minimization
@@ -37,3 +37,5 @@ title('Proximal Gradient Descent for $l_1$ regularization', 'Interpreter', 'late
 grid on
 xlabel('iterations');
 ylabel('$\Vert(prox(x_k)-x_k)\Vert_2$', 'Interpreter', 'latex');
+savefig('pgd.fig');
+saveas(gcf, 'pgd.pdf');
