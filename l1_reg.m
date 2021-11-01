@@ -37,5 +37,5 @@ title('Proximal Gradient Descent for $l_1$ regularization', 'Interpreter', 'late
 grid on
 xlabel('iterations');
 ylabel('$\Vert(prox(x_k)-x_k)\Vert_2$', 'Interpreter', 'latex');
-savefig('pgd.fig');
+saveas(gcf, 'pgd.png');
 saveas(gcf, 'pgd.pdf');
